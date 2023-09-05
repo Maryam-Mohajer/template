@@ -1,0 +1,25 @@
+$brown1: #ab6149;
+$groupTitleColor: #a9937b;
+
+.tablesContainer {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%
+}
+
+.empty-orders-text {
+    font-family: "Kohinoor";
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .return-link {
+    text-align: center;
+    color: $brown1;
+    font-family: "Kohinoor";
+    border-bottom: 1px solid $brown1;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+
+  }

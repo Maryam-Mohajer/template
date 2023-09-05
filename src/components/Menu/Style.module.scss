@@ -1,0 +1,75 @@
+$brown1: #ab6149;
+$groupTitleColor: #a9937b;
+
+// swiper
+.tab-swiper-container {
+  direction: rtl;
+  height: 45px;
+  display: flex;
+  border-bottom: 1px solid $brown1;
+}
+.swiper-item {
+  text-align: center;
+  font-size: 1.05rem;
+  height: fit-content;
+  align-self: center;
+  cursor: pointer;
+  font-family: "Elegant";
+}
+
+.swiper-item.active {
+  background-color: transparent;
+  color: $brown1;
+  font-weight: 700;
+}
+.menu-content {
+  width: 100%;
+  height: calc(100% - 65px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.empty-orders-text {
+  font-family: "Elegant";
+  font-size: 25px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.return-link {
+  text-align: center;
+  color: $brown1;
+  font-family: "Elegant";
+  border-bottom: 1px solid $brown1;
+  font-weight: bold;
+}
+.line {
+  border-color: $groupTitleColor;
+  margin: 20px 0;
+}
+.total-price-wrapper {
+  text-align: center;
+  font-family: "Kohinoor";
+  margin: 40px 0 20px 0;
+  font-size: 1rem;
+}
+
+.price {
+  font-weight: bold
+
+}
+.payment-button {
+  color: white;
+  background-color: $groupTitleColor;
+  padding: 8px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition:0.3s;
+  border : 0 none;
+}
+.payment-button:hover {
+  font-weight:bold;
+  opacity: 80%;
+}
+
+

@@ -1,0 +1,267 @@
+$brown1: #ab6149;
+$groupTitleColor: #a9937b;
+
+.menu-container {
+  // height: 100vh;
+  overflow: hidden;
+  background: url("../../assets/images/mobile\ menu\ bg\ 2.jpg");
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  position: relative;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+
+.menu-container:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #6f5435;
+  opacity: 45%;
+  z-index: -1;
+}
+.content-container {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.menu {
+  width: 100%;
+  height: 79%;
+  margin: 0 auto;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(6px) brightness(128%);
+  padding: 10px;
+}
+
+.top-cart {
+  height: 3.4%;
+  padding: 0.5rem 0.1rem;
+  position: relative;
+  z-index: 13;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-cart {
+  width: 40px;
+  height: 40px;
+  z-index: 33;
+}
+
+.menu-heading {
+  height: 8.6%;
+  text-align: center;
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 4px;
+
+  h2 {
+    font-family: "Times";
+    z-index: 2;
+    font-size: 2rem;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: "techl";
+    z-index: 2;
+    font-size: 0.65rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    padding-left: 1.3rem;
+  }
+}
+
+.menu-footer {
+  height: 8.4%;
+  font-family: "Kohinoor";
+  color: white;
+  font-size: 0.6rem;
+  opacity: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footer-top {
+    width: 70%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cac0b3;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+.orders-total-count {
+  background-color: $brown1;
+  border-radius: 50%;
+  color: white;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  position: absolute;
+  top: 30%;
+  right: 0.85%;
+}
+
+.button {
+  background-color: $brown1;
+  color: white;
+  width: 100px;
+  height: max-content;
+  font-family: "Kohinoor";
+  font-size: 0.8rem;
+  margin-top: 3px;
+  z-index: 33;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: $brown1;
+  color: white;
+  opacity: 0.8;
+}
+
+.button2 {
+  font-family: "Kohinoor";
+  color: $brown1;
+  padding: 0 !important;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.button2:hover {
+  background-color: transparent;
+}
+
+.menuIcone {
+  font-size: 30px;
+}
+
+.menuItem {
+  font-family: "Kohinoor";
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+.active {
+  color: #aba894;
+  background-color: white !important;
+}
+
+.menuItem:hover {
+  background-color: #aba894;
+}
+.menuItem.active:hover {
+  color : black;
+  background-color: #aba894;
+}
+
+.back {
+  font-family: "Kohinoor";
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  color: $brown1;
+}
+
+.back:hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 821px) {
+  .menu {
+    height: 81%;
+  }
+  .menu-footer {
+    height: 7.5%;
+  }
+
+  .content-container {
+    width: 90.6%;
+  }
+
+  .top-cart {
+    padding: 0.6rem 0.1rem;
+  }
+
+  .menu-heading {
+    height: 8%;
+  }
+
+  .order-cart {
+    width: 34px;
+    height: 34px;
+  }
+}
+// @media screen and (height: 896px ) {
+//   .menu {
+//     height: 75%;
+//   }
+// }
+
+@media screen and (max-height: 720px) {
+  .menu-heading {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.55rem;
+    }
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .menu-heading {
+    padding-bottom: 1px;
+
+    h2 {
+      font-size: 1.3rem;
+      position: relative;
+      top: 3px;
+    }
+
+    p {
+      font-size: 0.55rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu-heading {
+    p {
+      letter-spacing: 1.4rem !important;
+      padding-left: 0.8rem;
+    }
+  }
+}

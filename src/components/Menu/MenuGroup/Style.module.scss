@@ -1,0 +1,165 @@
+$groupTitleColor: #91775f;
+// $groupTitleColor: #a9937b;
+$main_black: #413f3f;
+$brown1: #ab6149;
+
+.menu-group-container {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-group-icon {
+  align-self: center;
+  width: 60px;
+  height: 60px;
+}
+
+.menu-group-title {
+  font-family: "Elegant";
+  color: $groupTitleColor;
+  position: relative;
+  top: -8px;
+  font-size: 1.2rem;
+}
+
+.menu-item-container {
+  color: $main_black;
+  position: relative;
+}
+.menu-item-container.menu-item-disable {
+  opacity: 0.6;
+}
+
+.menu-item-container.menu-item-disable:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 33;
+}
+
+.errorText {
+  color: red;
+  font-family: "Kohinoor";
+  font-size: 0.7rem;
+  position: relative;
+  top: -12px;
+}
+
+.menu-item-top {
+  list-style: none;
+  padding: 3px 5px;
+  margin: 0;
+  border-bottom: 0.5px solid #cac0b3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-title {
+  // font-family: "jalal";
+  font-family: "Kohinoor";
+
+  font-size: 0.8rem;
+  width: 37.5%;
+  text-align: right;
+}
+
+.menu-item-title-en {
+  font-family: "Farah";
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  width: 37.5%;
+  text-align: left;
+}
+
+.menu-item-price {
+  font-family: "myanmar";
+  font-size: 0.9rem;
+  width: 25%;
+  text-align: center;
+}
+
+.menu-item-bottom {
+  list-style: none;
+  padding: 3px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-description {
+  font-family: "madineh";
+  font-size: 0.65rem;
+  opacity: 70%;
+  width: 70%;
+  text-align: right;
+}
+
+.menu-item-shopping-cart {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  padding-left: 1px;
+}
+
+.shopping-cart-icon {
+  font-size: 1.1rem;
+  color: $brown1;
+}
+
+.choose-item-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.choose {
+  align-self: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.choose:hover {
+  opacity: 60%;
+}
+
+.plus {
+  background-color: $brown1;
+  width: 20px;
+  height: 20px;
+  min-height: 0;
+
+  .plusIcon {
+    width: 14px;
+    height: 14px;
+    color: white;
+  }
+}
+.plus:hover {
+  .plusIcon {
+    color: $brown1;
+  }
+}
+
+.mines {
+  border: 1px solid $brown1;
+  color: $brown1;
+  font-size: 1.5rem;
+
+  span {
+    position: relative;
+    top: -14px;
+  }
+}
+
+.item-count {
+  position: relative;
+  top: -1.5px;
+  display: inline-block;
+}

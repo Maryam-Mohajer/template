@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  direction: ltr;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 1px;
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(14, 8, 170);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: sandybrown;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darkcyan;
+}
+
+
+@font-face {
+  font-family: "MJ-Sayeh";
+  src: url("../assets/fonts/Mj_Sayeh.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inkfree";
+  src: url("../assets/fonts/Inkfree.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Times";
+  src: url("../assets/fonts/times.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "techl";
+  src: url("../assets/fonts/techl___.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Elegant";
+  src: url("../assets/fonts/Mj_Elegant\ Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jalal";
+  src: url("../assets/fonts/W_jalal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "madineh";
+  src: url("../assets/fonts/W_madineh.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Farah";
+  src: url("../assets/fonts/Mj_Farah.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "myanmar";
+  src: url("../assets/fonts/mmrtext.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kohinoor'; /*Can be any text*/
+  src: url(../assets/fonts/Kohinoor-Regular.TTF);
+}
+
+/* 
+.ul-item {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0px 20px;
+} */
+
+.li-item {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.li-item:hover {
+  /* background-color: #f5f5f5; */
+}
+
+.li-item.active {
+  background-color: transparent;
+  color: red;
+}
+
+main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  /* height:500px */
+}
+
+
+.MuiOutlinedInput-notchedOutline {
+  border-width: 1px !important;
+  /* border-color: pink !important; */
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ab6149 !important;
+}
+
+.MuiInputLabel-root {
+  color: rgb(126, 125, 125) !important;
+  font-size: 0.9rem;
+} 
+
+/* .MuiInputBase-input  {
+  background: transparent;
+}
+
+.MuiTextField-root {
+  background: transparent;
+} */

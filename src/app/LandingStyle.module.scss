@@ -1,0 +1,115 @@
+.landing-page {
+  background: url("../assets/images/landing\ bg2.jpg");
+  background-size: cover;
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  position: relative;
+  direction: rtl;
+}
+
+
+.landing-title {
+  font-family: "MJ-Sayeh";
+  font-size: 180px;
+  color: white;
+  text-align: center;
+  padding-top: 0;
+  height: 180px;
+  line-height: 100%;
+}
+
+.landing-navbar {
+  font-family: "Inkfree";
+  font-size: 38px;
+  color: #b87e57;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.landing-navbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: calc(var(--window-height) - 297px);
+  left: 83.3px;
+  width: 1px;
+  background-color: #b87e57;
+  z-index: 999;
+}
+
+@media (max-width: 810px) {
+  .landing-title {
+    font-size: 150px;
+  }
+
+  .landing-navbar {
+    font-size: 30px;
+    margin-top: 150px;
+    padding-left: 40px;
+  }
+
+  .landing-navbar:before {
+    bottom: calc(var(--window-height) - 343px);
+    left: 42.2px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .landing-navbar {
+    font-size: 30px;
+    margin-top: 30px;
+    padding-left: 40px;
+  }
+
+  .landing-navbar:before {
+    bottom: calc(var(--window-height) - 223px);
+    left: 42.2px;
+  }
+}
+
+@media screen and (max-height: 530px) {
+  .landing-navbar {
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+
+  .landing-navbar:before {
+    bottom: calc(var(--window-height) - 203px);
+    left: 42.2px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .landing-navbar {
+    margin-top: 120px;
+  }
+
+  .landing-navbar:before {
+    bottom: calc(var(--window-height) - 320px);
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .landing-navbar {
+    margin-top: 200px;
+  }
+
+  .landing-navbar:before {
+    bottom: calc(var(--window-height) - 400px);
+  }
+}
+
+@media screen and (min-height: 1250px) {
+  .landing-navbar {
+    margin-top: 250px;
+  }
+
+  .landing-navbar:before {
+    bottom: calc(var(--window-height) - 449px);
+  }
+}
